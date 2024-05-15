@@ -76,7 +76,7 @@ class Game
       @playing = false
     end
 
-    if @turn_counter == 12
+    if @turn_counter == 12 && @secret_code != @code_breaker.guess.to_i
       puts "#{RED}Game over. That was a hard code to break!#{RESET}"
       puts
       puts "Here is the 'master code' that you were trying to break: #{@secret_code}"
